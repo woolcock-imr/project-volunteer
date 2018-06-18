@@ -9,7 +9,7 @@
         $('#save__ID').hide();
         //-------------------------------------
         var fields="Volunteer ID|UID,First_Name,Last_Name,Phone,Postcode,Email,Medical_Research,Newsletters,Gender,Year_of_Birth,Asthma,COPD,Chronic_Bronchitis,Emphysema,Rhintis,Lung_Cancer,Insomnia,Narcolepsy,OSA,RLS";
-        _fields="_Form,"+fields+",Submit Date|DateTime";
+        _fields=""+fields+",Submit Date|DateTime";
         //-------------------------------------
         $('#D__ID').on('load',function(){  _set_req(); _request_data(); })
         //-------------------------------------
