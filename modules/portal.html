@@ -23,6 +23,10 @@
 		var prefix=this_module.prefix; if(prefix==undefined) prefix="";
 		//--------------------------------------------------------
         $('#panel__ID u').on('click',function(){
+			if($vm.server=='production' && $vm.user=='guest'){
+				$vm.alert('No permission!');
+				return;
+			}
 			var m=$(this).attr('m');
             if(m!=undefined){
 				$vm.load_module_v2(prefix+m,'',{});
