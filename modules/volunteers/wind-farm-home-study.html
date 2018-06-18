@@ -17,6 +17,10 @@
             _req={cmd:'query_records_script',db_pid:'91000095',name:'wind farm home',s1:'"'+$('#keyword__ID').val()+'"',I:$('#I__ID').text(),page_size:$('#page_size__ID').val()}
         }
         //-------------------------------------
+        var _set_req_export=function(i1,i2){
+            _req={cmd:'query_records_script',db_pid:'91000095',name:'wind farm home',s1:'"'+$('#keyword__ID').val()+'"',i6:i1,i7:i2}
+        }
+        //-----------------------------------------------
     }
 </script>
 <style>
