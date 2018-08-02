@@ -1,0 +1,24 @@
+<section>
+    VmInclude:__COMPONENT__/grid/grid.v3.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+        VmInclude:__COMPONENT__/grid/grid.v3.js
+        $('#new__ID').hide();
+        $('#save__ID').hide();
+        //-------------------------------------
+        var fields="Volunteer ID|UID,First_Name,Last_Name,Phone,Postcode,Email,Medical_Research,Newsletters,Gender,Year_of_Birth,Asthma,COPD,Chronic_Bronchitis,Emphysema,Rhintis,Lung_Cancer,Insomnia,Narcolepsy,OSA,RLS";
+        _fields=""+fields+",Submit Date|DateTime";
+        //-------------------------------------
+        $('#D__ID').on('load',function(){  _set_req(); _request_data(); })
+        //-------------------------------------
+        var _set_req=function(){
+            _req={cmd:'query_records_script',db_pid:'91000095',name:'effect of lung volume - match',s1:'"'+$('#keyword__ID').val()+'"',I:$('#I__ID').text(),page_size:$('#page_size__ID').val()}
+        }
+        //-------------------------------------
+    }
+</script>
+<style>
+    VmInclude:__COMPONENT__/grid/grid.v3.css
+</style>
